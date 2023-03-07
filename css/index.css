@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url("../fonts/Manrope-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header_background, .main_background {
+    background: #F5F5F5;
+}
+
+.header_container, .main_container, .footer_container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+
+.header_wrapper {
+    padding: 60px 27.1% 100px 5.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "hf hs hth";
+}
+
+.header_wrapper a {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #000000;
+    text-align: left;
+    white-space: nowrap;
+
+    text-decoration: none;
+}
+
+.header_first_section {
+    grid-area: hf;
+}
+
+.header_second_section {
+    grid-area: hs;
+}
+
+.header_third_section {
+    grid-area: hth;
+}
+
+/*MAIN*/
+
+.main_wrapper {
+    padding: 0 27.1% 157px 5.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "mf ms mth";
+}
+
+.main_first_section {
+    grid-area: mf;
+}
+
+.main_second_section {
+    grid-area: ms;
+}
+
+.main_third_section {
+    grid-area: mth;
+}
+
+.main_first_section, .main_second_section, .main_third_section {
+
+}
+
+.main_wrapper h3 {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #A5A5A5;
+    margin-bottom: 50px;
+}
+
+.main_wrapper a {
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.margin_bottom {
+    margin-bottom: 50px;
+}
+
+/*FOOTER*/
+.footer_container {
+    display: flex;
+    height: 360px;
+    overflow: hidden;
+}
+
+.footer_container img {
+    max-width: 1920px;
+    max-height: 360px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+}
+
+@media (max-width: 1050px) {
+    .header_wrapper {
+        padding: 30px 13.5% 50px 2.7%;
+    }
+
+    .main_wrapper {
+        padding: 0 13.5% 78px 2.7%;
+    }
+}
